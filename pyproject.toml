@@ -10,6 +10,7 @@ packages = [{include = "task_manager"}]
 python = "^3.8"
 django = "^4.2.1"
 python-dotenv = "^1.0.0"
+dj-database-url = "^2.0.0"
 
 
 [build-system]
