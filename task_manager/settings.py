@@ -34,7 +34,7 @@ DEBUG = os.getenv('DEBUG')
 
 DATABASE_URL = os.getenv('DATABASE_URL')
 
-ALLOWED_HOSTS = ['webserver', ]
+ALLOWED_HOSTS = ['*', ]
 
 
 # Application definition
