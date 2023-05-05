@@ -5,8 +5,13 @@ __pycache__/
 dist/
 
 # Environments
-/.venv/
+.venv/
+venv/
+.idea/
+.env/
+env/
+*.env
 
-# PyCharm
-/.idea/
-/.env
+*.pyc
+db.sqlite3
+staticfiles/
