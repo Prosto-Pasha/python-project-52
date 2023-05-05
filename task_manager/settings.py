@@ -84,7 +84,8 @@ WSGI_APPLICATION = 'task_manager.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        conn_max_age=600,
+        default=DATABASE_URL,
+        conn_max_age=1800,
         conn_health_checks=True,
     )
 }
