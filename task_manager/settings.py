@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrap4',
+    'rosetta',
 ]
 
 MIDDLEWARE = [
@@ -130,7 +131,7 @@ LANGUAGES = (
 )
 
 LOCALE_PATHS = [
-    os.path.join(BASE_DIR, 'task_manager', 'locale'),
+    os.path.join(BASE_DIR, 'locale'),
 ]
 
 TIME_ZONE = 'UTC'

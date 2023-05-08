@@ -1,24 +1,28 @@
+{# Load the tag library #}
+{% load bootstrap4 %}
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+{# Load Internationalisation #}
+{% load i18n %}
+
+
 <!DOCTYPE html>
-<html lang="ru-ru">
+<html>
   <head>
-    {# Load the tag library #}
-    {% load bootstrap4 %}
-    {# Load CSS and JavaScript #}
-    {% bootstrap_css %}
-    {% bootstrap_javascript jquery='full' %}
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    <title>Менеджер задач</title>
+    <title>{% trans "Task manager" %}</title>
   </head>
   <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
-      <a class="navbar-brand" href="/">Менеджер задач</a>
+      <a class="navbar-brand" href="/">{% trans "Task manager" %}</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarToggleExternalContent">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/users/">Пользователи</a>
+            <a class="nav-link" href="/users/">{% trans "Users" %}</a>
           </li>
           {% block nav_content %}{% endblock %}
         </ul>
@@ -29,6 +33,7 @@
     </nav>
     {# Display django.contrib.messages as Bootstrap alerts #}
     {% bootstrap_messages %}
+    {% block content %}
     <div class="container wrapper flex-grow-1">
       <h1 class="my-4">
       </h1>
@@ -47,5 +52,6 @@
         <a target="_blank" href="https://ru.hexlet.io">Hexlet</a>
       </div>
     </footer>
+    {% endblock %}
   </body>
 </html>
