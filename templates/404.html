@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="container wrapper flex-grow-1">
+  <h1 class="my-4"></h1>
+  <div class="card text-center">
+    <div class="card-body p-5 bg-light">
+      <div class="display-4">{% trans "We lost this page" %}</div>
+      <p class="lead">{% trans "We searched high and low but couldn't find what you're looking for." %}</p>
+      <p class="lead">{% trans "Let's find a better place for you to go." %}</p>
+      <hr>
+      <a class="btn btn-primary btn-lg" href="{% url 'index' %}">{% trans "Home" %}</a>
+    </div>
+  </div>
+</div>
+{% endblock content %}

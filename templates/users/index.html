@@ -1,0 +1,50 @@
+{% extends "index.html" %}
+{% load i18n %}
+
+{% block content %}
+  <div class="container wrapper flex-grow-1">
+    <h1 class="my-4">{% trans "Пользователи" %}</h1>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>{% trans "Имя пользователя" %}</th>
+          <th>{% trans "Полное имя" %}</th>
+          <th>{% trans "Дата создания" %}</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for user in users %}
+        <tr>
+          <td>{{ user.id }}</td>
+          <td>{{ user.username }}</td>
+          <td>{{ user.get_full_name }}</td>
+          <td>{{ user.date_joined|date:"d.m.Y H:i" }}</td>
+          <td>
+            <a href="{% url 'user_update' user.id %}">{% trans "Изменить" %}</a>
+            <br>
+            <a href="{% url 'user_delete' user.id %}">{% trans "Удалить" %}</a>
+          </td>
+        </tr>
+        {% endfor %}
+
+
+        <tr>
+          <td>306</td>
+          <td>superuser</td>
+          <td>Pervoe Vtoroe</td>
+          <td>09.05.2023 08:53</td>
+          <td>
+            <a href="/users/306/update/">Изменить</a>
+            <br>
+            <a href="/users/306/delete/">Удалить</a>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+{% endblock %}

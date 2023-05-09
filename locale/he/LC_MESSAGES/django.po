@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-08 15:28+0300\n"
-"PO-Revision-Date: 2023-05-08 11:25+0000\n"
+"POT-Creation-Date: 2023-05-09 18:23+0300\n"
+"PO-Revision-Date: 2023-05-09 12:44+0000\n"
 "Last-Translator:   <prostopasha@gmail.com>\n"
 "Language-Team: \n"
 "Language: he\n"
@@ -20,32 +20,86 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: task_manager/settings.py:128
+#: task_manager/settings.py:147
 msgid "English"
 msgstr "אנגלית"
 
-#: task_manager/settings.py:129
+#: task_manager/settings.py:148
 msgid "Russian"
 msgstr "רוסית"
 
-#: task_manager/settings.py:130
+#: task_manager/settings.py:149
 msgid "Hebrew"
 msgstr "עברית"
 
-#: task_manager/templates/base.html:14 task_manager/templates/base.html:18
+#: templates/404.html:9
+msgid "We lost this page"
+msgstr ""
+
+#: templates/404.html:10
+msgid "We searched high and low but couldn't find what you're looking for."
+msgstr ""
+
+#: templates/404.html:11
+msgid "Let's find a better place for you to go."
+msgstr ""
+
+#: templates/404.html:13
+msgid "Home"
+msgstr ""
+
+#: templates/base.html:13 templates/base.html:17
 msgid "Task manager"
 msgstr "מנהל המשימות"
 
-#: task_manager/templates/base.html:25
+#: templates/base.html:24
 msgid "Users"
-msgstr ""
+msgstr "משתמשים"
 
-#: task_manager/templates/index.html:7
+#: templates/base.html:40
+msgid "Привет от Хекслета!"
+msgstr "שלום מHexlet!"
+
+#: templates/base.html:41
+msgid "Практические курсы по программированию"
+msgstr "קורסי תכנות מעשיים"
+
+#: templates/base.html:43
+msgid "Узнать больше"
+msgstr "ללמוד 'יותר"
+
+#: templates/index.html:6
 msgid "Log in"
+msgstr "היכנס"
+
+#: templates/index.html:9
+msgid "Register"
+msgstr "הירשם"
+
+#: templates/users/index.html:6
+msgid "Пользователи"
+msgstr "משתמשים"
+
+#: templates/users/index.html:12
+#, fuzzy
+#| msgid "Пользователи"
+msgid "Имя пользователя"
+msgstr "משתמשים"
+
+#: templates/users/index.html:13
+msgid "Полное имя"
 msgstr ""
 
-#: task_manager/templates/index.html:10
-msgid "Register"
+#: templates/users/index.html:14
+msgid "Дата создания"
+msgstr ""
+
+#: templates/users/index.html:26
+msgid "Изменить"
+msgstr ""
+
+#: templates/users/index.html:28
+msgid "Удалить"
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/bootstrap4/components.py:17
@@ -1292,7 +1346,6 @@ msgid "Connect, get help, or contribute"
 msgstr ""
 
 #, fuzzy
-#~| msgid "English"
 #~ msgid "Text in English"
 #~ msgstr "אנגלית"
 
