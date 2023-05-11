@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-09 18:23+0300\n"
-"PO-Revision-Date: 2023-05-09 15:27+0000\n"
-"Last-Translator:   <prostopasha@gmail.com>\n"
+"POT-Creation-Date: 2023-05-11 11:18+0300\n"
+"PO-Revision-Date: 2023-05-11 08:19+0000\n"
+"Last-Translator: Имя Фамилия <prostopasha@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -67,11 +67,16 @@ msgstr "Практические курсы по программировани�
 msgid "Узнать больше"
 msgstr "Узнать больше"
 
-#: templates/index.html:6
+#: templates/nav_right_reg.html:4
+#| msgid "Log in"
+msgid "Log out"
+msgstr "Выход"
+
+#: templates/nav_right_unreg.html:4
 msgid "Log in"
 msgstr "Вход"
 
-#: templates/index.html:9
+#: templates/nav_right_unreg.html:7
 msgid "Register"
 msgstr "Регистрация"
 
@@ -79,24 +84,23 @@ msgstr "Регистрация"
 msgid "Пользователи"
 msgstr "Пользователи"
 
-#: templates/users/index.html:12
-#| msgid "Пользователи"
+#: templates/users/index.html:11
 msgid "Имя пользователя"
 msgstr "Имя пользователя"
 
-#: templates/users/index.html:13
+#: templates/users/index.html:12
 msgid "Полное имя"
 msgstr "Полное имя"
 
-#: templates/users/index.html:14
+#: templates/users/index.html:13
 msgid "Дата создания"
 msgstr "Дата создания"
 
-#: templates/users/index.html:26
+#: templates/users/index.html:25
 msgid "Изменить"
 msgstr "Изменить"
 
-#: templates/users/index.html:28
+#: templates/users/index.html:27
 msgid "Удалить"
 msgstr "Удалить"
 

@@ -2,10 +2,9 @@
 {% load i18n %}
 
 {% block nav_content2 %}
-    <li class="nav-item">
-      <a class="nav-link" href="/login/">{% trans "Log in" %}</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/users/create/">{% trans "Register" %}</a>
-    </li>
+{% if user.is_authenticated %}
+  {% include "nav_right_reg.html" %}
+{% else %}
+  {% include "nav_right_unreg.html" %}
+{% endif %}
 {% endblock %}

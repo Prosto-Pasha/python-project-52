@@ -13,13 +13,28 @@ class IndexView(View):
         })
 
 
+class UserCreateView(View):
+
+    def get(self, request, *args, **kwargs):
+        form = CategoryForm()
+        return render(request, 'categories/create.html', {'form': form})
+
+    def post(self, request, *args, **kwargs):
+        form = CategoryForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('categories_index')
+
+        return render(request, 'categories/create.html', {'form': form})
+
+
 class UserUpdate(View):
 
     def get(self, request, *args, **kwargs):
         user_obj = get_object_or_404(User, id=kwargs['id'])
-        return render(request, 'articles/article.html', context={
-            'article': article,
-        })
+        #return render(request, 'articles/article.html', context={
+        #    'article': article,
+        #})
 
 
 class UserDelete(View):
