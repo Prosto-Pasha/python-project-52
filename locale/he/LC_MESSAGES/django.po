@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-11 11:18+0300\n"
+"POT-Creation-Date: 2023-05-14 23:48+0300\n"
 "PO-Revision-Date: 2023-05-11 08:20+0000\n"
 "Last-Translator: Имя Фамилия <prostopasha@gmail.com>\n"
 "Language-Team: \n"
@@ -15,21 +15,34 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % "
+"1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
 "X-Generator: Poedit 3.2.2\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: task_manager/settings.py:147
+#: task_manager/settings.py:143
 msgid "English"
 msgstr "אנגלית"
 
-#: task_manager/settings.py:148
+#: task_manager/settings.py:144
 msgid "Russian"
 msgstr "רוסית"
 
-#: task_manager/settings.py:149
+#: task_manager/settings.py:145
 msgid "Hebrew"
 msgstr "עברית"
+
+#: task_manager/users/views.py:28
+msgid "Account created successfully"
+msgstr ""
+
+#: task_manager/views.py:20
+msgid "Login successful"
+msgstr ""
+
+#: task_manager/views.py:26
+msgid "You were successfully logout"
+msgstr ""
 
 #: templates/404.html:9
 msgid "We lost this page"
@@ -47,38 +60,57 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: templates/base.html:13 templates/base.html:17
+#: templates/base.html:11 templates/base.html:15
 msgid "Task manager"
 msgstr "מנהל המשימות"
 
-#: templates/base.html:24
+#: templates/base.html:22
 msgid "Users"
 msgstr "משתמשים"
 
-#: templates/base.html:40
-msgid "Привет от Хекслета!"
-msgstr "שלום מHexlet!"
+#: templates/base.html:26
+msgid "Статусы"
+msgstr ""
 
-#: templates/base.html:41
-msgid "Практические курсы по программированию"
-msgstr "קורסי תכנות מעשיים"
+#: templates/base.html:29
+msgid "Метки"
+msgstr ""
 
-#: templates/base.html:43
-msgid "Узнать больше"
-msgstr "ללמוד 'יותר"
+#: templates/base.html:32
+msgid "Задачи"
+msgstr ""
 
-#: templates/nav_right_reg.html:4
-#| msgid "Log in"
+#: templates/base.html:39
 msgid "Log out"
 msgstr "יציאה"
 
-#: templates/nav_right_unreg.html:4
+#: templates/base.html:43 templates/login.html:11
 msgid "Log in"
 msgstr "היכנס"
 
-#: templates/nav_right_unreg.html:7
+#: templates/base.html:46 templates/users/create.html:7
 msgid "Register"
 msgstr "הירשם"
+
+#: templates/index.html:9
+msgid "Привет от Хекслета!"
+msgstr "שלום מHexlet!"
+
+#: templates/index.html:10
+msgid "Практические курсы по программированию"
+msgstr "קורסי תכנות מעשיים"
+
+#: templates/index.html:12
+msgid "Узнать больше"
+msgstr "ללמוד 'יותר"
+
+#: templates/login.html:7
+msgid "Login"
+msgstr ""
+
+#: templates/users/create.html:13
+msgid "Зарегистрировать"
+msgstr ""
 
 #: templates/users/index.html:6
 msgid "Пользователи"
@@ -171,8 +203,8 @@ msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/core/validators.py:264
 msgid ""
-"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or"
-" hyphens."
+"Enter a valid “slug” consisting of Unicode letters, numbers, underscores, or "
+"hyphens."
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/core/validators.py:276
@@ -382,15 +414,15 @@ msgstr ""
 #: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1489
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD "
-"HH:MM[:ss[.uuuuuu]][TZ] format."
+"“%(value)s” value has an invalid format. It must be in YYYY-MM-DD HH:MM[:ss[."
+"uuuuuu]][TZ] format."
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1497
 #, python-format
 msgid ""
-"“%(value)s” value has the correct format (YYYY-MM-DD "
-"HH:MM[:ss[.uuuuuu]][TZ]) but it is an invalid date/time."
+"“%(value)s” value has the correct format (YYYY-MM-DD HH:MM[:ss[.uuuuuu]]"
+"[TZ]) but it is an invalid date/time."
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1502
@@ -409,8 +441,8 @@ msgstr ""
 #: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1791
 #, python-format
 msgid ""
-"“%(value)s” value has an invalid format. It must be in [DD] "
-"[[HH:]MM:]ss[.uuuuuu] format."
+"“%(value)s” value has an invalid format. It must be in [DD] [[HH:]MM:]ss[."
+"uuuuuu] format."
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/db/models/fields/__init__.py:1795
@@ -569,8 +601,7 @@ msgid "Many-to-many relationship"
 msgstr ""
 
 #. Translators: If found as last label character, these punctuation
-#. characters will prevent the default label_suffix to be appended to the
-#. label
+#. characters will prevent the default label_suffix to be appended to the label
 #: venv/lib/python3.11/site-packages/django/forms/boundfield.py:184
 msgid ":?.!"
 msgstr ""
@@ -620,8 +651,7 @@ msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/forms/fields.py:622
 #, python-format
-msgid ""
-"Ensure this filename has at most %(max)d character (it has %(length)d)."
+msgid "Ensure this filename has at most %(max)d character (it has %(length)d)."
 msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
@@ -735,8 +765,7 @@ msgid "The inline value did not match the parent instance."
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/forms/models.py:1429
-msgid ""
-"Select a valid choice. That choice is not one of the available choices."
+msgid "Select a valid choice. That choice is not one of the available choices."
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/forms/models.py:1568
@@ -1210,10 +1239,10 @@ msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/views/csrf.py:127
 msgid ""
-"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or"
-" including the “Referrer-Policy: no-referrer” header, please remove them. "
-"The CSRF protection requires the “Referer” header to do strict referer "
-"checking. If you’re concerned about privacy, use alternatives like <a "
+"If you are using the <meta name=\"referrer\" content=\"no-referrer\"> tag or "
+"including the “Referrer-Policy: no-referrer” header, please remove them. The "
+"CSRF protection requires the “Referer” header to do strict referer checking. "
+"If you’re concerned about privacy, use alternatives like <a "
 "rel=\"noreferrer\" …> for links to third-party sites."
 msgstr ""
 
@@ -1265,8 +1294,8 @@ msgstr ""
 #: venv/lib/python3.11/site-packages/django/views/generic/dates.py:652
 #, python-format
 msgid ""
-"Future %(verbose_name_plural)s not available because "
-"%(class_name)s.allow_future is False."
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/views/generic/dates.py:692
@@ -1322,10 +1351,10 @@ msgstr ""
 #: venv/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:222
 #, python-format
 msgid ""
-"You are seeing this page because <a "
-"href=\"https://docs.djangoproject.com/en/%(version)s/ref/settings/#debug\" "
-"target=\"_blank\" rel=\"noopener\">DEBUG=True</a> is in your settings file "
-"and you have not configured any URLs."
+"You are seeing this page because <a href=\"https://docs.djangoproject.com/en/"
+"%(version)s/ref/settings/#debug\" target=\"_blank\" "
+"rel=\"noopener\">DEBUG=True</a> is in your settings file and you have not "
+"configured any URLs."
 msgstr ""
 
 #: venv/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:230

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-11 11:18+0300\n"
-"PO-Revision-Date: 2023-05-11 08:19+0000\n"
+"POT-Creation-Date: 2023-05-14 23:48+0300\n"
+"PO-Revision-Date: 2023-05-14 20:50+0000\n"
 "Last-Translator: Имя Фамилия <prostopasha@gmail.com>\n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -19,17 +19,29 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: task_manager/settings.py:147
+#: task_manager/settings.py:143
 msgid "English"
 msgstr "Английский"
 
-#: task_manager/settings.py:148
+#: task_manager/settings.py:144
 msgid "Russian"
 msgstr "Русский"
 
-#: task_manager/settings.py:149
+#: task_manager/settings.py:145
 msgid "Hebrew"
 msgstr "Иврит"
+
+#: task_manager/users/views.py:28
+msgid "Account created successfully"
+msgstr "Пользователь успешно зарегистрирован"
+
+#: task_manager/views.py:20
+msgid "Login successful"
+msgstr "Вы залогинены"
+
+#: task_manager/views.py:26
+msgid "You were successfully logout"
+msgstr "Вы разлогинены"
 
 #: templates/404.html:9
 msgid "We lost this page"
@@ -47,38 +59,57 @@ msgstr "Давайте перейдём в место получше."
 msgid "Home"
 msgstr "Домой"
 
-#: templates/base.html:13 templates/base.html:17
+#: templates/base.html:11 templates/base.html:15
 msgid "Task manager"
 msgstr "Менеджер задач"
 
-#: templates/base.html:24
+#: templates/base.html:22
 msgid "Users"
 msgstr "Пользователи"
 
-#: templates/base.html:40
-msgid "Привет от Хекслета!"
-msgstr "Привет от Хекслета!"
+#: templates/base.html:26
+msgid "Статусы"
+msgstr "Статусы"
 
-#: templates/base.html:41
-msgid "Практические курсы по программированию"
-msgstr "Практические курсы по программированию"
+#: templates/base.html:29
+msgid "Метки"
+msgstr "Метки"
 
-#: templates/base.html:43
-msgid "Узнать больше"
-msgstr "Узнать больше"
+#: templates/base.html:32
+msgid "Задачи"
+msgstr "Задачи"
 
-#: templates/nav_right_reg.html:4
-#| msgid "Log in"
+#: templates/base.html:39
 msgid "Log out"
 msgstr "Выход"
 
-#: templates/nav_right_unreg.html:4
+#: templates/base.html:43 templates/login.html:11
 msgid "Log in"
 msgstr "Вход"
 
-#: templates/nav_right_unreg.html:7
+#: templates/base.html:46 templates/users/create.html:7
 msgid "Register"
 msgstr "Регистрация"
+
+#: templates/index.html:9
+msgid "Привет от Хекслета!"
+msgstr "Привет от Хекслета!"
+
+#: templates/index.html:10
+msgid "Практические курсы по программированию"
+msgstr "Практические курсы по программированию"
+
+#: templates/index.html:12
+msgid "Узнать больше"
+msgstr "Узнать больше"
+
+#: templates/login.html:7
+msgid "Login"
+msgstr "Вход"
+
+#: templates/users/create.html:13
+msgid "Зарегистрировать"
+msgstr "Зарегистрировать"
 
 #: templates/users/index.html:6
 msgid "Пользователи"
@@ -1349,6 +1380,25 @@ msgstr ""
 #: venv/lib/python3.11/site-packages/django/views/templates/default_urlconf.html:249
 msgid "Connect, get help, or contribute"
 msgstr ""
+
+#~ msgid ""
+#~ "Обязательное поле. Не более 150 символов. Только буквы, цифры и символы "
+#~ "@/./+/-/_."
+#~ msgstr ""
+#~ "Обязательное поле. Не более 150 символов. Только буквы, цифры и символы "
+#~ "@/./+/-/_."
+
+#~ msgid "Пароль"
+#~ msgstr "Пароль"
+
+#~ msgid "Ваш пароль должен содержать как минимум 3 символа."
+#~ msgstr "Ваш пароль должен содержать как минимум 3 символа."
+
+#~ msgid "Подтверждение пароля"
+#~ msgstr "Подтверждение пароля"
+
+#~ msgid "Для подтверждения введите, пожалуйста, пароль ещё раз."
+#~ msgstr "Для подтверждения введите, пожалуйста, пароль ещё раз."
 
 #~ msgid "Text in English"
 #~ msgstr "Текст на английском"

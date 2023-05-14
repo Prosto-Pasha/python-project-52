@@ -15,12 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from task_manager.views import IndexView
+from task_manager.views import IndexView, LoginFormView, custom_logout
 
 urlpatterns = [
     path('', IndexView.as_view(), name='index'),
     path('admin/', admin.site.urls),
     path('rosetta/', include('rosetta.urls')),
     path('users/', include('task_manager.users.urls')),
-    # path('someapp/', include('task_manager.someapp.urls')),
+    path('login/', LoginFormView.as_view(), name='login'),
+    path('logout/', custom_logout, name='logout'),
 ]

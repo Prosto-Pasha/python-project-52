@@ -1,14 +1,12 @@
-{# Load the tag library #}
 {% load bootstrap4 %}
-{# Load CSS and JavaScript #}
 {% bootstrap_css %}
 {% bootstrap_javascript jquery='full' %}
-{# Load Internationalisation #}
+{% load static %}
 {% load i18n %}
-{% get_current_language as LANGUAGE_CODE %}
 
 <html>
   <head>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <title>{% trans "Task manager" %}</title>
   </head>
@@ -23,32 +21,39 @@
           <li class="nav-item">
             <a class="nav-link" href="/users/">{% trans "Users" %}</a>
           </li>
-          {% block nav_content %}{% endblock %}
+          {% if user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link" href="/link/">{% trans "Статусы" %}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/link/">{% trans "Метки" %}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/link/">{% trans "Задачи" %}</a>
+            </li>
+          {% endif %}
         </ul>
         <ul class="navbar-nav">
-          {% block nav_content2 %}{% endblock %}
+          {% if user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link" href="/logout/">{% trans "Log out" %}</a>
+            </li>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="/login/">{% trans "Log in" %}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/users/create/">{% trans "Register" %}</a>
+            </li>
+          {% endif %}
         </ul>
       </div>
     </nav>
-    {# Display django.contrib.messages as Bootstrap alerts #}
-    {% bootstrap_messages %}
-    {% block content %}
     <div class="container wrapper flex-grow-1">
-      <h1 class="my-4"></h1>
-      <div class="card">
-        <div class="card-body p-5 bg-light">
-          <div class="display-4">{% trans "Привет от Хекслета!" %}</div>
-          <p class="lead">{% trans "Практические курсы по программированию" %}</p>
-          <hr>
-          <a class="btn btn-primary btn-lg" href="https://ru.hexlet.io">{% trans "Узнать больше" %}</a>
-        </div>
-      </div>
+      {# Display django.contrib.messages as Bootstrap alerts #}
+      {% bootstrap_messages %}
+      {% block content %}
+      {% endblock %}
     </div>
-    <footer>
-      <div class="container my-5 pt-4 border-top">
-        <a target="_blank" href="https://ru.hexlet.io">Hexlet</a>
-      </div>
-    </footer>
-    {% endblock %}
   </body>
 </html>

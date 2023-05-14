@@ -1,10 +1,21 @@
 {% extends "base.html" %}
 {% load i18n %}
 
-{% block nav_content2 %}
-{% if user.is_authenticated %}
-  {% include "nav_right_reg.html" %}
-{% else %}
-  {% include "nav_right_unreg.html" %}
-{% endif %}
-{% endblock %}
+    {% block content %}
+    <div class="container wrapper flex-grow-1">
+      <h1 class="my-4"></h1>
+      <div class="card">
+        <div class="card-body p-5 bg-light">
+          <div class="display-4">{% trans "Привет от Хекслета!" %}</div>
+          <p class="lead">{% trans "Практические курсы по программированию" %}</p>
+          <hr>
+          <a class="btn btn-primary btn-lg" href="https://ru.hexlet.io">{% trans "Узнать больше" %}</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container my-5 pt-4 border-top">
+        <a target="_blank" href="https://ru.hexlet.io">Hexlet</a>
+      </div>
+    </footer>
+    {% endblock %}
