@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load bootstrap4 %}
+
+
+{% block content %}
+  <h1 class="my-4">{% trans "Изменение пользователя" %}</h1>
+  {% include "errors.html" %}
+  <form action="{% url 'user_update' id=user_id %}" method="post">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+    {% bootstrap_form form %}
+    <input class="btn btn-primary" type="submit" value="{% trans 'Изменить' %}">
+  </form>
+{% endblock %}

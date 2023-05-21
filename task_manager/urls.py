@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from task_manager.views import IndexView, LoginFormView, custom_logout
 
+
 urlpatterns = [
     path('', IndexView.as_view(), name='index'),
     path('admin/', admin.site.urls),

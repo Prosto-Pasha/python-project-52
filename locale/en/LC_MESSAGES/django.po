@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-14 23:48+0300\n"
-"PO-Revision-Date: 2023-05-14 20:48+0000\n"
+"POT-Creation-Date: 2023-05-20 21:22+0300\n"
+"PO-Revision-Date: 2023-05-20 18:23+0000\n"
 "Last-Translator: Имя Фамилия <prostopasha@gmail.com>\n"
 "Language-Team: \n"
 "Language: en\n"
@@ -19,21 +19,35 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 "X-Translated-Using: django-rosetta 0.9.9\n"
 
-#: task_manager/settings.py:143
+#: task_manager/settings.py:146
 msgid "English"
 msgstr "English"
 
-#: task_manager/settings.py:144
+#: task_manager/settings.py:147
 msgid "Russian"
 msgstr "Russian"
 
-#: task_manager/settings.py:145
+#: task_manager/settings.py:148
 msgid "Hebrew"
 msgstr "Hebrew"
 
-#: task_manager/users/views.py:28
+#: task_manager/users/views.py:37
 msgid "Account created successfully"
 msgstr "Account created successfully"
+
+#: task_manager/users/views.py:48 task_manager/users/views.py:70
+msgid "Вы не авторизованы! Пожалуйста, выполните вход."
+msgstr ""
+
+#: task_manager/users/views.py:53 task_manager/users/views.py:75
+msgid "У вас нет прав для изменения другого пользователя."
+msgstr ""
+
+#: task_manager/users/views.py:86
+#, fuzzy
+#| msgid "Пользователи"
+msgid "Пользователь успешно изменён"
+msgstr "Users"
 
 #: task_manager/views.py:20
 msgid "Login successful"
@@ -79,15 +93,19 @@ msgstr "Tags"
 msgid "Задачи"
 msgstr "Tasks"
 
-#: templates/base.html:39
+#: templates/base.html:38
+msgid "Привет"
+msgstr "Hello"
+
+#: templates/base.html:40
 msgid "Log out"
 msgstr "Log out"
 
-#: templates/base.html:43 templates/login.html:11
+#: templates/base.html:44 templates/login.html:10
 msgid "Log in"
 msgstr "Log in"
 
-#: templates/base.html:46 templates/users/create.html:7
+#: templates/base.html:47 templates/users/create.html:7
 msgid "Register"
 msgstr "Register"
 
@@ -103,7 +121,7 @@ msgstr "Practical programming courses"
 msgid "Узнать больше"
 msgstr "Find out more"
 
-#: templates/login.html:7
+#: templates/login.html:6
 msgid "Login"
 msgstr "Login"
 
@@ -127,13 +145,19 @@ msgstr "Full name"
 msgid "Дата создания"
 msgstr "Creation date"
 
-#: templates/users/index.html:25
+#: templates/users/index.html:25 templates/users/update.html:13
 msgid "Изменить"
 msgstr "Change"
 
 #: templates/users/index.html:27
 msgid "Удалить"
 msgstr "Delete"
+
+#: templates/users/update.html:7
+#, fuzzy
+#| msgid "Имя пользователя"
+msgid "Изменение пользователя"
+msgstr "Username"
 
 #: venv/lib/python3.11/site-packages/bootstrap4/components.py:17
 #: venv/lib/python3.11/site-packages/bootstrap4/templates/bootstrap4/form_errors.html:3
